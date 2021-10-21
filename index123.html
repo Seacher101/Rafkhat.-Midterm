@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link rel="stylesheet" href="style134">
+<style>
+ body 
+  {
+  background: url(1561182942_2.jpg); }
+ {
+  text-align: center;
+}
+#title {
+  color: blue;
+}
+#description {
+  font-size: 1.5em;
+}
+#survey-form {
+  border: 1px solid black;
+  width: 55%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+}
+#name-label {
+  padding-right: 10px;
+}
+#name, #email, #age, #dropdown{
+ width: 300px;
+  margin-bottom: 10px;
+}
+.list {
+  margin-bottom: 10px;
+}
+textarea {
+width: 100%;
+}
+#btn-div{
+  text-align: center;
+ margin: 20px;
+}
+#submit {
+  font-size: 2em;
+  color: white;
+  background-color: green;
+}
+
+</style>
+
+<div>
+<h1 align="center">Travel Survey Form</h1>
+
+<p id="description">Thank you for taking the time to response for a Survey about travelling!</p>
+
+<form id="survey-form" action="lesovrafhat@gmail.com" method="post" enctype="text/plain" >
+  <label for="name" id="name-label">Name: </label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </br>
+  
+  <label for="email" id="email-label">Email: </label>
+  <input id="email" type="email" placeholder="Enter your email" required>
+  </br>
+
+   <label for="age" id="age-label">Age: </label>
+  <input id="age" type="name" placeholder="Enter your age" required>
+  </br>
+
+  <label for="join-question">With whom, Do you travel mast often?</label>
+  <select name="join-quesion" id="dropdown" list="join-list">
+    <option  value="family" >Family</option> 
+    <option value="friends" >Friends</option>
+    <option value="colleagues" >Colleagues</option>
+    <option value="alone">Alone</option> 
+  </select>
+  </br>
+
+  <fieldset class="list">
+    <legend>What is your gender?</legend>
+    <input type="radio" name="coder" value="yes"> Male<br>
+    <input type="radio" name="coder" value="no"> Female<br>
+  </fieldset>
+  </br>
+
+  <fieldset class="list">
+    <legend>Where would you like to travel this year?</legend>
+    <input type="checkbox" name="coder" value="..."> Europe<br>
+    <input type="checkbox" name="coder" value="..."> Asia<br>
+    <input type="checkbox" name="coder" value="..."> Africa<br>
+    <input type="checkbox" name="coder" value="..."> Australia<br>
+    <input type="checkbox" name="coder" value="..."> Nourth America<br>
+    <input type="checkbox" name="coder" value="..."> South America<br>
+  </fieldset>
+
+
+<label for="join-question">What's your employment status?</label>
+  <select name="join-quesion" id="dropdown" list="join-list">
+    <option  value="Student" >Student</option> 
+    <option value="Employed" >Employed</option>
+    <option value="self-employed" >Self-employed</option>
+    <option value="unemplayed">Unemplayed</option> 
+    <option value="retired">Retired</option> 
+    <option value="other">Other</option> 
+  </select>
+  </br>
+
+  <label for="comments ">Any questions or suggestions?</label></br>
+  <textarea name="comments " id="comments " ></textarea>
+  </br>
+
+  <div id="btn-div">
+    <button id="submit">Submit</button>
+  </div>
+
+  </form>
+  </div>
+<body>
